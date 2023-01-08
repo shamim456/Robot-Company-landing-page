@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+.banner-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #262626;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    z-index: 2;
+}
+.logo a{
+    font-family: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(204, 201, 201);
+}
+.menu{
+    position: relative;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style-type: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(204, 201, 201);
+    margin: 0 18px;
+    position: relative;
+    transition: 0.3s;
+}
+.menu ul li a:hover{
+    color: #fff;
+}
+.menu ul li a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -12px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(12px);
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu ul li a:hover:before{
+    opacity: 1;
+    transform: translateY(0);
+}
