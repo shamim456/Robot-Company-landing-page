@@ -1,31 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-
-<section class="banner-container">
-    <header>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner-container">
+      <header>
         <div class="logo">
-            <a href="/">ROBOT WORLD</a>
+          <a href="/">ROBOT WORLD</a>
         </div>
         <div class="menu">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Robot</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Robot</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-    </header>
-</section>
+      </header>
 
+      <div class="content-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slider">
+              <div class="slide-content">
+                <div class="info">
+                  <p>AI & Robotics</p>
+                  <h1>
+                    Revolution <br />
+                    In Human <br />
+                    Evolution
+                  </h1>
+                  <a href="#"
+                    ><i class="fa-solid fa-play"></i><span>View Demo</span></a
+                  >
+                </div>
+                <div class="image-slide">
+                  <div class="back-image">
+                    <img src="Image/28366-5-triangle-photo.png" alt="" />
+                  </div>
+                  <div class="front-image">
+                    <img src="image/robot-18848.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- start bottom blur card -->
+        <div class="glassipa">
+          <div class="work line">
+            <a href="#">What We Do?</a>
+            <p>
+              We Enable Machines To See <br />
+              And Understand The World
+            </p>
+          </div>
+          <div class="mission line">
+            <a href="#">Our Mission</a>
+            <p>
+              Boosting Wider Adoption Of <br />
+              Robotics In The World
+            </p>
+          </div>
+          <div class="social-media">
+            <a href="#">Follow Us</a>
+            <div class="icon">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/a3ee49d449.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="anime.min.js"></script>
+
+    <script>
+      anime({
+        targets: ".logo",
+        translateX: [180, 0],
+        opacity: [0, 1],
+        easing: "easeInOutExpo",
+      });
+    </script>
+  </body>
 </html>
