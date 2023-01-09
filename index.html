@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -27,7 +23,7 @@
       </header>
 
       <div class="content-container">
-        <div class="swiper">
+        <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slider">
               <div class="slide-content">
@@ -51,7 +47,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>       
           </div>
         </div>
         <!-- start bottom blur card -->
@@ -86,16 +82,49 @@
       src="https://kit.fontawesome.com/a3ee49d449.js"
       crossorigin="anonymous"
     ></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="anime.min.js"></script>
 
     <script>
+      // anime js code
       anime({
         targets: ".logo",
         translateX: [180, 0],
         opacity: [0, 1],
         easing: "easeInOutExpo",
+      });
+      anime({
+        targets: ".menu",
+        translateX: [-180, 0],
+        opacity: [0, 1],
+        easing: "easeInOutExpo",
+      });
+      anime({
+        targets: ".info",
+        translateX: [280, 0],
+        scale: [0, 1],
+        opacity: [0, 1],
+        easing: "easeInOutExpo",
+      });
+      anime({
+        targets: ".back-image",
+        translateX: [-280, 0],
+        rotate: 90,
+        scale: [0, 1],
+        opacity: [0, 1],
+        easing: "easeInOutExpo",
+      });
+      anime({
+        targets: ".front-image",
+        translateX: [-380, 0],
+        opacity: [0, 1],
+        easing: "easeInOutExpo",
+      });
+      anime({
+        targets: ".glassipa",
+        translateY: [80, 0],
+        opacity: [0, 1],
+        easing: "easeInOutExpo",
+        delay: 500,
       });
     </script>
   </body>
